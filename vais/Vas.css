@@ -1,0 +1,116 @@
+body{
+    background-color: #ddddd;
+    font-family: "Courier New", Courier;
+    margin-top: -30px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.080em;
+   
+}
+ul{
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    
+    
+}
+ul li{
+    float: left;
+    width: 240px;
+    height: 36px;
+    font-size: 17px;
+    text-align: center;
+    line-height: 33px;
+    
+    
+    
+}
+ul li a{
+    text-decoration: none;
+    border-radius: 15px;
+    color: black;
+    display: block;
+    border-style: inset;
+    border-color: lightgrey;
+    border-width: 1px;
+    
+    
+    
+}
+ul li a:hover{
+    border-style: groove;
+    color: white;
+    border-color: #008000;
+    background-color: #008000;
+    
+    
+}
+ul li ul li{
+    display: none;
+    
+   
+}
+ul li:hover ul li{
+    display: block;
+    
+}
+.container {
+    display: flex;
+    overflow: hidden;
+    background-color: green;
+    align-items: center;
+    height: 36px;
+    font-family: "Courier New", Courier;
+    position: relative;
+    top: 80%;
+    border-style: groove;
+    border-color: lightgrey;
+    border-radius: 15px;
+.scroll p{
+    color: white;    
+    }
+    
+}
+.scroll {
+    font-size: 17px;
+    color: black;
+    
+    animation: scroll 12s infinite linear;  
+}
+@keyframes scroll
+{
+    from{
+        transform: translateX(450%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.scroll:hover{
+    animation-play-state: paused;
+}
+.logo{
+    background-image: url("ceo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    padding: 0px;
+    margin: 0px;
+    width: 90px;
+    height: 45px;
+    text-decoration: none;
+}
+.cname{
+    text-decoration: none;
+    font-size: 17px;
+    position: absolute;
+    top: 90px;
+    right: 25px;
+    
+}
